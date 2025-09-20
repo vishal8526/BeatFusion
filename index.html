@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BeatFusion-A Music Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/7a4b62b0a4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="hey" id="blur">
+        <header>
+            <nav class="container">
+
+                <div class="logo">BeatFusion</div>
+
+                <ul>
+
+                    <!-- <a href="#hero">
+                        <li>Overview</li> -->
+                    </a>
+                    <a href="#music">
+                        <li>Music</li>
+                    </a>
+                    <a href="#video">
+                        <li>Video</li>
+                    </a>
+                    <a href="#gift">
+                        <li>Gift Cards</li>
+                    </a>
+                    <a href="ContactSection.html">
+                        <li>Contact us</li>
+                    </a>
+                    <a href="#review">
+                        <li>Reviews</li>
+                    </a>
+                    <a href="login.html">
+                        <button id="btn">
+                            Login
+                        </button>
+                    </a>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero-section" id="hero">
+                <div class="container">
+
+                    <h1>BeatFusion</h1>
+                    <h3>Your music, movies, and TV shows take center stage.</h3>
+                    <p>
+                        BeatFusion is the best way to organize and enjoy the music, movies, and
+                        TV shows you already have — and shop for the ones you want. Enjoy
+                        all the entertainment BeatFusion has to offer on your Mac and PC.
+                    </p>
+                </div>
+
+            </section>
+            <audio src="songs/Audio.mp3" controls>
+                Your browser does not support the audio element.
+            </audio>
+            <section class="music-section" id="music">
+                <div class="container">
+                    <h2>
+                        <span><i class="fa fa-music"></i></span>
+                        Music
+                    </h2>
+                    
+                    <ul id="search-results">
+                    </ul>
+                    </ul>
+
+                    <div class="search-bar">
+                        <input type="search" id="search-bar" placeholder="Search for music">
+                       
+                        <button id="search-btn">Search</button>
+                        
+                        <div id="search-results"></div>
+                    </div>
+                   
+                    <div class="music-controls">
+                       
+                        <button id="backward-btn">«</button>
+                        <button id="play-pause-btn">►</button>
+                        <button id="forward-btn">»</button>
+
+                    </div>
+
+
+                    <!-- Create an audio element to play the music -->
+                     <audio id="music-player" src="Audio.mp3"></audio> 
+
+                    <h4>
+                        Stream over 45 million songs, ad-free. Or download albums and tracks
+                        to listen to offline. All the music in your personal BeatFusion library
+                        — no matter where it came from — lives right alongside the Orange
+                        Music catalog. Start your free three-month trial with no commitment,
+                        and cancel anytime.
+                    </h4>
+
+                    <div class="content">
+                        <a href="login.html">Start Your Trial Now</a>
+                    </div>
+
+
+
+                    <p>
+                        Every music genre is available on BeatFusion, for both iOS and Android devices.
+                    </p>
+
+                    <div class="ipad-iphone-img">
+                        <img src="ipad-iphone.png" alt="iphone ipad" />
+                    </div>
+                </div>
+            </section>
+            <section class="about-music container">
+                <h3>The movie and TV collection you always wished for. Granted.</h3>
+                <p>
+                    With over 100,000 movies and TV shows to choose from, there’s always
+                    something great to watch on BeatFusion and if you watch on Orange TV 4K,
+                    you’ll be able to enjoy a tremendous selection of your favorite
+                    content in 4K HDR. So get ready to enjoy episodes of your favorite TV
+                    shows or hit movies you’ve been waiting to see — anytime, anywhere.
+                    Just tap to play, or even download if you’re going somewhere you won’t
+                    have Wi-Fi.
+                </p>
+                <button class="secondary-btn">Read more</button>
+                <!-- Create a div to hold the playlist -->
+                <div class="playlist ">
+                    <!-- Create a header for the playlist -->
+                    <h2>Playlist for <span id="artist-name"></span></h2>
+
+                    <div class="search-bar">
+                        <input type="text" id="search-input" placeholder="Search by artist name">
+                        <button id="search-btn">Search</button>
+                    </div>
+
+                </div>
+    </div>
+    </section>
+    <section class="video-section" id="video">
+        <div class="container">
+            <h3>A world of entertainment. Available wherever you are.</h3>
+            <p>
+                Welcome to BeatFusion, your ultimate destination for all things music. Whether you’re at home, on
+                the
+                go, or anywhere in between, BeatFusion brings the world of music to your fingertips. Dive into an
+                endless library of songs, discover new artists, and create playlists that match your every mood.
+                With BeatFusion, the rhythm of life is always within reach. So, plug in, tune out the noise, and
+                let
+                the music take you on a journey like never before.
+            </p>
+        </div>
+    </section>
+    <div class="container">
+        <section class="gift-section" id="gift">
+            <div class="gift-card">
+                <img src="gift_card.png" alt="gift card" />
+            </div>
+            <div class="gift-content">
+                <h3>Gift Card</h3>
+                <p>
+                    Unlock the full potential of your music experience with our versatile gift cards! Whether
+                    you’re
+                    looking to subscribe to our premium services, enjoy exclusive discounts, or use special
+                    coupons,
+                    our gift cards have you covered. Choose from our Standard Gift Card priced at $24, perfect
+                    for a
+                    month of premium access, or opt for the Premium Gift Card at $60, offering three months of
+                    uninterrupted music bliss. Redeem your gift card today and dive into a world of endless
+                    tunes
+                    and exclusive benefits!
+                </p>
+                <input type="text" placeholder="Enter your coupon code" id="coupon">
+
+                <div>
+                    <button class="secondary-btn">Redeem</button>
+                    <button class="secondary-btn" id="buy-coupon-btn">Buy a Coupon</button>
+                </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    </main>
+    <footer>
+        <section class="footer-upper">
+            <div class="container">
+                <div class="footer-links">
+                    <h4>Shop & Learn</h4>
+                    <ul>
+                        <li>Music</li>
+                        <li>Movies</li>
+                        <li>Shows</li>
+                        <li>Apps</li>
+                        <li>Gift Cards</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Store</h4>
+                    <ul>
+                        <li>Find a Store</li>
+                        <li>Today</li>
+                        <li>Financing</li>
+                        <li>OCamp</li>
+                        <li>Order Status</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Education & Business</h4>
+                    <ul>
+                        <li>Education</li>
+                        <li>Shop for Collage</li>
+                        <li>Business</li>
+                        <li>Shop for Business</li>
+                        <li>Jobs</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>About</h4>
+                    <ul>
+                        <li>Newsroom</li>
+                        <li>Leadership</li>
+                        <li>Investors</li>
+                        <li>Envents</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="footer-lower">
+
+        </section>
+
+    </footer>
+    </div>
+</body>
+
+</html>
